@@ -13,7 +13,6 @@ router.post("/create", createSubject);
 router.post("/addQuestion", addQuestion);
 router.post("/getAllSubjects", getAllSubjects);
 router.post("/getSubjectQuestions", getSubjectQuestions);
-
 router.delete("/clear", async (req, res) => {
   try {
     const result = await subjectModel.deleteMany({});
