@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "7761dfca-b999-4c4f-86ee-0b2e070736f3"
+      }
+    },
+    "android": {
+      "package": "com.pausepoint.pausepoint_server"
+    }
+  }
+}

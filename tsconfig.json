@@ -1,0 +1,48 @@
+// {
+//   "compilerOptions": {
+//     "target": "ES2020",
+//     "module": "ESNext",
+//     "moduleResolution": "Node",
+//     "rootDir": "./src",
+//     "outDir": "./dist",
+//     "esModuleInterop": true,
+//     "strict": false,
+//     "skipLibCheck": true,
+//     "forceConsistentCasingInFileNames": true,
+//     "allowJs": true,
+//     "checkJs": false,
+//     "resolveJsonModule": true,
+//     "noEmit": true,
+//     "allowSyntheticDefaultImports": true
+//   },
+//   "include": ["src/**/*", "index.ts"],
+//   "exclude": ["node_modules", "dist"]
+// }
+
+// // 💡 Explanation:
+
+// // allowJs: true → You can keep using .js files while migrating.
+
+// // noEmit: true → TypeScript won’t output JS files; we’ll run with ts-node in dev.
+
+// // esModuleInterop → Allows import express from "express" style imports to work.
+
+// // module: ESNext → Keeps compatibility with your "type": "module" setup.
+
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "checkJs": false,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*", "index.ts"]
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Electricity Invoice</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+        color: #000;
+      }
+
+      /* Header */
+      .header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .company-line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 10px;
+      }
+
+      .company-line img {
+        width: 120px;
+        height: auto;
+      }
+
+      .company-line span {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .sub-title {
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: underline;
+        margin-top: 5px;
+      }
+
+      hr {
+        border: 1px solid #000;
+        margin: 15px 0;
+      }
+
+      /* Main Content */
+      .content-wrapper {
+        display: flex;
+        justify-content: center;
+      }
+
+      .invoice-box {
+        width: 70%; /* keep invoice narrower */
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+      }
+
+      .section {
+        margin-bottom: 15px;
+      }
+
+      .section p {
+        margin: 4px 0;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      .footer {
+        margin-top: 20px;
+        border-top: 1px solid #000;
+        padding-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="company-line">
+        <img
+          src="http://www.stronsmart.com/wp-content/uploads/2020/09/2020091602490152.png"
+          alt="Logo"
+        />
+        <span>PRIVATE METERING COMPANY CHINA</span>
+      </div>
+      <p class="sub-title">CAPTAINS COURT ESTATE AJAH ELECTRICITY BILL</p>
+      <hr />
+    </div>
+
+    <!-- Invoice Body -->
+    <div class="content-wrapper">
+      <div class="invoice-box">
+        <!-- Details -->
+        <div class="section">
+          <p>Date: {{date}}</p>
+          <p>User Coder: {{userCoder}}</p>
+          <p>Customer No.: {{customerNo}}</p>
+          <p>Meter No.: {{meterNo}}</p>
+          <p>Activity: {{activity}}</p>
+          <p>District: {{district}}</p>
+          <p>Account No.: {{accountNo}}</p>
+          <p>Payment: {{payment}}</p>
+          <p>Address: {{address}}</p>
+          <p>Value: {{value}}</p>
+          <p class="bold">Token: {{token}}</p>
+        </div>
+
+        <!-- Summary -->
+        <div class="footer">
+          <p>VAT: {{vat}}</p>
+          <p class="bold">Total Fees: {{totalFees}}</p>
+          <p class="bold">Amount Paid: {{amountPaid}}</p>
+          <p class="bold">Net Value: {{netValue}}</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
