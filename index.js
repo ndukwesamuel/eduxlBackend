@@ -65,7 +65,7 @@ let corsOptions = {
 // const httpServer = require("http").Server(app);
 // const io = socketInitializer(httpServer);
 
-const port = process.env.PORT || 5050;
+const port = process.env.PORT || 6060;
 
 // Middlewares
 // app.use(cors(corsOptions));

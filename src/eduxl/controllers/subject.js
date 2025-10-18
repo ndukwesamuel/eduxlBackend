@@ -89,9 +89,7 @@ export const getAllSubjects = async (req, res) => {
 
 export const getSubjectQuestions = async (req, res) => {
   try {
-    const { subject, type } = req.body;
-
-    const result = await subjectModel.findOne({ subject, type });
+    const result = await subjectModel.find();
     if (!result) return res.status(404).json({ message: "Subject not found" });
 
     res.status(200).json({ data: result });
