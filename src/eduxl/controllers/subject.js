@@ -94,7 +94,7 @@ export const getSubjectQuestions = async (req, res) => {
     const result = await subjectModel.findOne({ subject, type });
     if (!result) return res.status(404).json({ message: "Subject not found" });
 
-    res.status(200).json({ total: result.questions.length, data: result });
+    res.status(200).json({ data: result });
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
